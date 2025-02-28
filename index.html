@@ -11,7 +11,7 @@
   <header class="flex align-center justify-between mx-5 mt-5 pb-30">
     <h1 class="text-2xl">IbrahCars</h1>
     <div>
-      <ul class="hidden lg:flex mx-9 px-8 lg:font-medium">
+      <ul id="nav-list" class="hidden lg:flex mx-9 px-8 lg:font-medium">
         <li class="pr-8 hover:text-blue">Home</li>
         <li class="pr-8">Our services</li>
         <li class="pr-8">Cars</li>
@@ -19,7 +19,7 @@
       </ul>
     </div>
     <div class="lg:hidden">
-      <i class='bx bx-menu text-3xl mt-2'></i>
+      <i id="menu-icon" class='bx bx-menu text-3xl mt-2'></i>
     </div>
   </header>
   <main class="lg:flex">
@@ -50,6 +50,11 @@
     </div>
   </main>
   
-    
+    <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      var navList = document.getElementById('nav-list');
+      navList.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
