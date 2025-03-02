@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <title>IbrahCars-Car</title>
+</head>
+<body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white">
+  <header class="text-white mt-4">
+    <nav class="flex justify-between md:flex md:justify-between items-center px-6">
+      <div>
+        <a href="index.html" class="text-2xl font-bold">IbrahCars</a>
+      </div>
+      <div class="nav-links md:static absolute font-bold 
+                  bg-white text-black md:min-h-fit min-h-[40vh]
+                  left-0 top-[-100%] w-full flex items-center justify-center px-5 py-0">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:p-0">
+          <li class="flex items-center mr-4">
+            <ion-icon name="home" class="mr-4"></ion-icon><a href="index.html">Home</a>
+          </li>
+          <li class="flex items-center " >
+            <ion-icon name="book" class="mr-4"></ion-icon> <a href="about.html">About</a>
+          </li>
+          <li class="flex items-center ">
+            <ion-icon name="car" class="mr-4"></ion-icon> <a href="car.html">Car</a>
+          </li>
+          <li class="flex items-center ">
+            <ion-icon name="call" class="mr-4"></ion-icon> <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+    </nav>
+  </header>
+  <main class="mt-10 ">
+    <section class="mx-4 lg:flex lg:flex-row lg:mt-50">
+        <h1 class="text-2xl text-center font-bold text-white">Our Car</h1>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">
+            <img class="w-full" src="https://www.pngall.com/wp-content/uploads/2016/07/Car-Download-PNG.png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Toyota RAV 4</div>
+              <p class="text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">12,000,000 TZS</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Petrol</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">2007</span>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">
+            <img class="w-full" src="https://www.toyota-global.com/company/history_of_toyota/75years/vehicle_lineage/car/id60007699/images/m1.png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Toyota RAV 4</div>
+              <p class="text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">15,000,000 TZS</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Petrol</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">2015</span>
+            </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">
+            <img class="w-full" src="https://www.pngplay.com/wp-content/uploads/13/Toyota-Land-Cruiser-Prado-PNG-Free-File-Download.png" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Toyota Prado</div>
+              <p class="text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">20,000,000 TZS</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Petrol</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">2017</span>
+            </div>
+        </div>
+        
+    </section>
+  </main>
+
+  <script>
+    NavLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+      e.name = e.name === 'menu ' ? 'close' : 'menu';
+      NavLinks.classList.toggle('top-[9%]')
+    }
+  </script>
+
+</body>
+</html>
